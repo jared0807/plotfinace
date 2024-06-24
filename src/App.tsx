@@ -20,7 +20,7 @@ function App() {
                 <div className="text-sm text-white/40">TOTAL DEPOSIT</div>
                 <div className="p-2 bg-white/30 flex justify-between h-[49px] border-white/20 border-[2px] w-full rounded-xl">
                   <div className="flex items-center gap-1">
-                    <img src="/images/plot.png" className="w-6 h-6" />
+                    <img src="/images/plot.png" className="w-6 h-6"  alt=""/>
                     <input className="bg-transparent outline-none flex flex-auto text-base text-white" />
                   </div>
 
@@ -70,7 +70,7 @@ function App() {
                 <div className="text-sm text-white/40">TOTAL DEPOSIT</div>
                 <div className="p-2 bg-white/30 flex justify-between h-[49px] border-white/20 border-[2px] w-full rounded-xl">
                   <div className="flex items-center gap-1">
-                    <img src="/images/plot.png" className="w-6 h-6" />
+                    <img src="/images/plot.png" className="w-6 h-6"  alt=""/>
                     <input className="bg-transparent outline-none flex flex-auto text-base text-white" />
                   </div>
 
@@ -140,6 +140,7 @@ function App() {
                     <img
                       src="/images/plot.png"
                       className="w-6 md:w-[50px] h-6 md:h-[50px]"
+                       alt=""
                     />
                     <span className=" text-2xl md:text-[40px] mt-[8px] text-white gt-american">
                       1,000
@@ -167,7 +168,7 @@ function App() {
                       Total Staked:
                     </span>
                     <div className="flex gap-1">
-                      <img src="/images/plot.png" className="w-6 h-6" />
+                      <img src="/images/plot.png" className="w-6 h-6" alt="" />
                       <span className=" text-base text-white  gt-american">{`30,000,000 (50% of circ.cap.)`}</span>
                     </div>
                   </div>
@@ -179,7 +180,7 @@ function App() {
                     </span>
                     <div className="flex gap-1">
                       {" "}
-                      <img src="/images/plot.png" className="w-6 h-6" />
+                      <img src="/images/plot.png" className="w-6 h-6" alt="" />
                       <span className=" text-lg text-white  gt-american">
                         100,000
                       </span>
@@ -191,7 +192,7 @@ function App() {
                     </span>
                     <div className="flex gap-1">
                       {" "}
-                      <img src="/images/plot.png" className="w-6 h-6" />
+                      <img src="/images/plot.png" className="w-6 h-6" alt="" />
                       <span className=" text-lg text-white  gt-american">
                         50,000
                       </span>
@@ -258,7 +259,7 @@ function App() {
                     </span>
                     <div className="flex gap-1">
                       {" "}
-                      <img src="/images/plot.png" className="w-6 h-6" />
+                      <img src="/images/plot.png" className="w-6 h-6" alt=""/>
                       <span className=" text-lg text-white  gt-american">
                         100,000
                         <span className="text-lg text-gray-400 ml-1">
