@@ -1,7 +1,5 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { useEffect, useState } from "react";
+import {useState } from "react";
 function App() {
   const [isStakeModal, setIsStakeModal] = useState(false);
   const [isUnstakeModal, setIsUnstakeModal] = useState(false);
