@@ -168,8 +168,8 @@ function App() {
           </div>
           <div className=" text-base md:text-xl text-white">{`Plots holders (Ethereum mainnet only) can stake their $PLOTS in the launchpad staking module to receive perks such as further $PLOTS distributions as well as supported game tokens. `} <span className="cursor-pointer underline text-white hover:text-blue-300 inline-block " onClick={()=>setIsLearnMore(true)}>Learn more here.</span></div>
         </div>
-        <div className=" mt-6 w-full h-ull bg-gradient-to-br from-[#4EA7B355] to-transparent p-[2px] rounded-2xl">
-          <div className="bg-gradient-to-br from-[#7A4EB3]/30 to-[#010106] p-6 rounded-2xl">
+        <div className=" mt-6 w-full h-ull bg-gradient-to-br from-[#7A4EB3]/20 to-transparent p-[2px] rounded-2xl">
+          <div className="bg-gradient-to-br from-[#7A4EB3]/30 to-[#010106]/0 p-6 rounded-2xl">
             <div className="w-full gap-9 flex flex-col">
               <div className="gap-5 flex flex-col w-full">
               <div className="text-base md:text-2xl text-white font-light gt-american">
