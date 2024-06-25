@@ -34,7 +34,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="w-full flex flex-col gap-2 justify-center items-center cursor-pointer rounded-full text-white">
+              {/* <div className="w-full flex flex-col gap-2 justify-center items-center cursor-pointer rounded-full text-white">
                 <div className=" shadow-character-glow-green w-full rounded-2xl">
                   <div className="flex w-full items-center justify-center rounded-full p-[2px] opacity-90 transition-opacity bg-glow-button-green-border">
                     <div className="gt-american flex h-7 w-full select-none items-center justify-end rounded-full px-3 text-center text-[14px] bg-glow-button-green">
@@ -49,7 +49,7 @@ function App() {
                   <div className="text-white/20 text-base">75%</div>
                   <div className="text-white/20 text-base">100%</div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="w-full flex flex-col gap-2 justify-center items-center cursor-pointer rounded-full text-white">
+              {/* <div className="w-full flex flex-col gap-2 justify-center items-center cursor-pointer rounded-full text-white">
                 <div className=" shadow-character-glow-green w-full rounded-2xl">
                   <div className="flex w-full items-center justify-center rounded-full p-[2px] opacity-90 transition-opacity bg-glow-button-green-border">
                     <div className="gt-american flex h-7 w-full select-none items-center justify-end rounded-full px-3 text-center text-[14px] bg-glow-button-green">
@@ -99,7 +99,7 @@ function App() {
                   <div className="text-white/20 text-base">75%</div>
                   <div className="text-white/20 text-base">100%</div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
