@@ -43,3 +43,11 @@
 .bg-glow-button-orange {
   background-image: linear-gradient(0deg,#a87222,#403516 15%,#bca575)
 }
+
+.bg-collections-background-border {
+  background-image: linear-gradient(-25deg,#030308 55%,#603caf)
+}
+
+.bg-collections-background {
+  background-image: linear-gradient(-25deg,#030308 70%,#190f2d)
+}
