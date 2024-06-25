@@ -63,8 +63,8 @@ function App() {
 
       {/* Stake Modal */}
       <div className={`w-screen h-screen bg-black/50 z-50 fixed top-0 left-0 justify-center items-center p-4 ${isStakeModal?"flex":"hidden"}`}>
-        <div className="max-w-[400px] w-full flex justify-center items-center  bg-gradient-to-br from-[#59b7c4] to-black p-[2px] rounded-2xl">
-          <div className="w-full flex justify-center items-center  bg-gradient-to-br from-[#4EA7B3AA] to-transparent p-[2px] rounded-2xl">
+        <div className="max-w-[400px] w-full flex justify-center items-center bg-stake-background-border p-[2px] rounded-2xl">
+          <div className="w-full flex justify-center items-center bg-stake-background p-[2px] rounded-2xl">
             <div className="py-6 px-4 w-full relative flex-col gap-8 flex justify-center items-center">
               <div className="absolute top-4 right-4 flex p-1 cursor-pointer text-white w-8 h-8 justify-center items-center bg-white/20 rounded-full" onClick={()=>setIsStakeModal(false)}>
                 &#10006;
@@ -113,8 +113,8 @@ function App() {
 
       {/* Unstake Modal */}
       <div className={`w-screen h-screen bg-black/50 z-50 fixed top-0 left-0 justify-center items-center p-4 ${isUnstakeModal?"flex":"hidden"}`}>
-        <div className="max-w-[400px] w-full flex justify-center items-center  bg-gradient-to-br from-[#59b7c4] to-black p-[2px] rounded-2xl">
-          <div className="w-full flex justify-center items-center  bg-gradient-to-br from-[#4EA7B3AA] to-transparent p-[2px] rounded-2xl">
+        <div className="max-w-[400px] w-full flex justify-center items-center bg-stake-background-border p-[2px] rounded-2xl">
+          <div className="w-full flex justify-center items-center bg-stake-background p-[2px] rounded-2xl">
             <div className="py-6 px-4 w-full relative flex-col gap-8 flex justify-center items-center">
               <div className="absolute top-4 right-4 flex p-1 cursor-pointer text-white w-8 h-8 justify-center items-center bg-white/20 rounded-full" onClick={()=>setIsUnstakeModal(false)}>
                 &#10006;
