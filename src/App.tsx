@@ -3,10 +3,66 @@ import {useState } from "react";
 function App() {
   const [isStakeModal, setIsStakeModal] = useState(false);
   const [isUnstakeModal, setIsUnstakeModal] = useState(false);
+  const [isLearnMore, setIsLearnMore] = useState(false);
   return (
     <div className="w-full h-full flex justify-center bg-black p-5">
+      {/* Learn More */}
+      <div className={`w-screen h-screen bg-black/50 z-50 fixed top-0 left-0 justify-center items-center p-4 ${isLearnMore?"flex":"hidden"}`}>
+        <div className="max-w-[760px] w-full flex justify-center items-center  bg-gradient-to-br from-[#26727c] to-black p-[2px] rounded-2xl">
+          <div className="w-full flex justify-center items-center  bg-gradient-to-br from-[#4EA7B325] to-transparent p-[2px] rounded-2xl">
+            <div className="py-6 px-6 w-full relative flex-col gap-8 flex justify-center items-center">
+              <div className="absolute top-4 right-4 flex p-1 cursor-pointer text-white w-8 h-8 justify-center items-center bg-white/20 rounded-full" onClick={()=>setIsLearnMore(false)}>
+                &#10006;
+              </div>
+              <span className="gt-american w-full flex justify-start text-4xl text-white">
+                How it works
+              </span>
+              <div className="flex flex-col w-full">
+              <div className="flex gap-6 items-center py-6 border-b-2 border-b-[#4EA7B325]">
+                <img className="w-[110px] h-[110px]" alt="" src="./images/1.png"></img>
+                <div className="flex flex-col gap-2">
+                  <div className="gt-american text-xl text-white">Points</div>
+                  <div className="gt-american text-sm  md:test-base text-white">We are distributing 5% of $PLOTS token supply to stakers in February 2025. The distribution is determined by how much $PLOTS you have deposited in our staking module. You are free to withdrawal at anytime and keep your points</div>
+                </div>
+              </div>
+              <div className="flex gap-6 items-center py-6 border-b-2 border-b-[#4EA7B325]">
+                <img className="w-[110px] h-[110px]" alt="" src="./images/3.png"></img>
+                <div className="flex flex-col gap-2">
+                  <div className="gt-american text-xl text-white">Multiplier</div>
+                  <div className="gt-american text-sm  md:test-base text-white">Your multiplier starts at 1x, and increases by 0.5x per month once you make your first deposit. If you withdrawal, your multiplier will decrease proportional to the amount you’ve withdrawn. Note: the lowest multiplier is 1x, even if you withdrawal everything.</div>
+                </div>
+              </div>
+              <div className="flex gap-6 items-center py-6">
+                <img className="w-[110px] h-[110px]" alt="" src="./images/2.png"></img>
+                <div className="flex flex-col gap-2">
+                  <div className="gt-american text-xl text-white">Perks</div>
+                  <div className="gt-american text-sm  md:test-base text-white">Besides receiving $PLOTS tokens for staking, you may also earn airdrops from games that our platform supports.</div>
+                </div>
+              </div>
+              </div>
+              {/* <div className="w-full flex flex-col gap-2 justify-center items-center cursor-pointer rounded-full text-white">
+                <div className=" shadow-character-glow-green w-full rounded-2xl">
+                  <div className="flex w-full items-center justify-center rounded-full p-[2px] opacity-90 transition-opacity bg-glow-button-green-border">
+                    <div className="gt-american flex h-7 w-full select-none items-center justify-end rounded-full px-3 text-center text-[14px] bg-glow-button-green">
+                      100%
+                    </div>
+                  </div>
+                </div>
+                <div className="py-2 w-full flex justify-between border-t-2 border-white/20">
+                  <div className="text-white/20 text-base">0%</div>
+                  <div className="text-white/20 text-base">25%</div>
+                  <div className="text-white/20 text-base">50%</div>
+                  <div className="text-white/20 text-base">75%</div>
+                  <div className="text-white/20 text-base">100%</div>
+                </div>
+              </div> */}
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Stake Modal */}
-      <div className={`w-screen h-screen bg-black/50 z-50 fixed top-0 left-0 justify-center items-center ${isStakeModal?"flex":"hidden"}`}>
+      <div className={`w-screen h-screen bg-black/50 z-50 fixed top-0 left-0 justify-center items-center p-4 ${isStakeModal?"flex":"hidden"}`}>
         <div className="max-w-[400px] w-full flex justify-center items-center  bg-gradient-to-br from-[#59b7c4] to-black p-[2px] rounded-2xl">
           <div className="w-full flex justify-center items-center  bg-gradient-to-br from-[#4EA7B3AA] to-transparent p-[2px] rounded-2xl">
             <div className="py-6 px-4 w-full relative flex-col gap-8 flex justify-center items-center">
@@ -56,7 +112,7 @@ function App() {
       </div>
 
       {/* Unstake Modal */}
-      <div className={`w-screen h-screen bg-black/50 z-50 fixed top-0 left-0 justify-center items-center ${isUnstakeModal?"flex":"hidden"}`}>
+      <div className={`w-screen h-screen bg-black/50 z-50 fixed top-0 left-0 justify-center items-center p-4 ${isUnstakeModal?"flex":"hidden"}`}>
         <div className="max-w-[400px] w-full flex justify-center items-center  bg-gradient-to-br from-[#59b7c4] to-black p-[2px] rounded-2xl">
           <div className="w-full flex justify-center items-center  bg-gradient-to-br from-[#4EA7B3AA] to-transparent p-[2px] rounded-2xl">
             <div className="py-6 px-4 w-full relative flex-col gap-8 flex justify-center items-center">
@@ -110,7 +166,7 @@ function App() {
           <div className=" text-5xl md:text-[84px] font-semibold bg-gradient-to-r from-[#FFFFFF] to-[#a5b2e0] bg-clip-text text-transparent  gt-american">
             Claim & Stake
           </div>
-          <div className=" text-base md:text-xl text-white">{`Plots holders (Ethereum mainnet only) can stake their $PLOTS in the launchpad staking module to receive perks such as further $PLOTS distributions as well as supported game tokens. Learn more here.`}</div>
+          <div className=" text-base md:text-xl text-white">{`Plots holders (Ethereum mainnet only) can stake their $PLOTS in the launchpad staking module to receive perks such as further $PLOTS distributions as well as supported game tokens. `} <span className="cursor-pointer underline text-white hover:text-blue-300 inline-block " onClick={()=>setIsLearnMore(true)}>Learn more here.</span></div>
         </div>
         <div className=" mt-6 w-full h-ull bg-gradient-to-br from-[#4EA7B355] to-transparent p-[2px] rounded-2xl">
           <div className="bg-gradient-to-br from-[#7A4EB3]/30 to-[#010106] p-6 rounded-2xl">
